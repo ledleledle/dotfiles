@@ -6,7 +6,14 @@
 >This is configuration for my Void Linux Environment (curently).
 
 ## Dependencies
+> You know how to install dependencies in void?
+> ```
+> sudo xbps-install abc1 abc2 abc3 ...
+> ```
 
+
+### Cursor
+Cursors from [catppuccin](https://github.com/catppuccin/cursors)
 
 ## How to install
 
