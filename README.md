@@ -6,11 +6,29 @@
 >This is configuration for my Void Linux Environment (curently).
 
 ## Dependencies
-> You know how to install dependencies in void?
-> ```
-> sudo xbps-install abc1 abc2 abc3 ...
-> ```
+You know how to install dependencies in void?
+```bash
+sudo xbps-install abc1 abc2 abc3 ...
+```
 
+### Required dependencies
+`base-devel` is like `build-essential`.
+```
+base-devel
+```
+
+### Neovim
+Need to install
+```
+fd ripgrep
+```
+
+- [lazy.nvim](https://github.com/folke/lazy.nvim)
+- [catppuccin theme](https://github.com/catppuccin/nvim)
+- [telescope](https://github.com/nvim-telescope/telescope.nvim)
+- [tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter/wiki/Installation)
+- [neo-tree](https://github.com/nvim-neo-tree/neo-tree.nvim)
+- [lualine](https://github.com/nvim-lualine/lualine.nvim)
 
 ### Cursor
 Cursors from [catppuccin](https://github.com/catppuccin/cursors)
