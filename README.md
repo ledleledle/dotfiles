@@ -26,20 +26,21 @@ Here are some details about my current setup:
 - 📖 **IDE** [Neovim](https://neovim.io/) with plugins installed (see Neovim section).
 
 ## 🧑‍🔧 About the Dotfiles
-> **TL;DR Who cares!?**
+> [!NOTE]
+>  **TL;DR Who cares!?**
 
 I started this project on 8 December 2024 when I got laid off from my previous company. This project helped me fill the gap after getting laid off and continues my journey in **Ricing** Industry, which has been left untouched since 2020. Looking at my previous dotfiles makes me think, **God... What is this mess?** They're so disorganized and nearly impossible to reproduce. So, my comeback here is to create dotfiles with clean and simple code also easy to use.
 
-This configuration is inspired by this cruel world, depression and anxious feeling. Please note that these configuration is simply what works for me and looks good to me, and they may not work for everyone, you have to adjust by yourself if some not work or *different taste* (lol) :laughing:. Feel free to use or adapt anything you find useful. Feel free to reach out if you have any questions or problem.
+This configuration is inspired by this cruel world, depression and anxious feeling. Please note that these configuration is simply **what works and looks good to me**, and they may not work for everyone, you have to adjust by yourself if some not work or *different taste* (lol) :laughing:. Feel free to use or adapt anything you find useful. Feel free to reach out if you have any questions or problem.
 
 **This configuration is:**
 - :cry: Moody, can be dark or light.
 - :keyboard: Keyboard users might love it but mouse-friendly too.
 
-## 📚 Dependencies
-You know how to install dependencies in Void Linux?
+## 📚 Dependencies (Prerequisite)
+This guide will help you to install some essential dependencies in order to used this configuration and running the OS properly.
 
-Here's how:
+Anyway... You know how to install dependencies in Void Linux?
 ```bash
 sudo xbps-install abc1 abc2 abc3 ...
 ```
@@ -56,18 +57,19 @@ For rootless `brightnessctl` you can use bellow command.
 sudo chmod +s $(which brightnessctl)
 ```
 
-**Hyprland**
-
+#### Hyprland
 Hyprland is not available from Void Linux’s official repositories [due to a conflict of packaging philosophy](https://github.com/void-linux/void-packages/issues/37544). However, a [third party repository](https://github.com/Makrennel/hyprland-void) is available with binary packages built in CI by GitHub Actions.
 
 You can add this repository by creating a file such as `/etc/xbps.d/hyprland-void.conf` with the following contents:
-```
+```bash
 echo "repository=https://raw.githubusercontent.com/Makrennel/hyprland-void/repository-x86_64-glibc" > /etc/xbps.d/hyprland-void.conf
+
+# Then update repo
 xbps-install -S
 ```
 Then you can install the packages as you would any other:
 ```
-hyprland xdg-desktop-portal-hyprland hyprland-protocols
+hyprland xdg-desktop-portal-hyprland hyprland-protocols hyprpaper
 ```
 
 </details>
@@ -80,25 +82,26 @@ Required to install for neovim. `fd` and `ripgrep` will be used for `telescope` 
 neovim fd ripgrep
 ```
 ---
-- [lazy.nvim](https://github.com/folke/lazy.nvim)
-- [catppuccin theme](https://github.com/catppuccin/nvim) Cool theme
-- [telescope](https://github.com/nvim-telescope/telescope.nvim) 
-- [tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter/wiki/Installation)
-- [neo-tree](https://github.com/nvim-neo-tree/neo-tree.nvim)
-- [lualine](https://github.com/nvim-lualine/lualine.nvim) Cool bar
+#### ⚙️ Plugin used
+- [lazy.nvim](https://github.com/folke/lazy.nvim) is a plugin manager for Neovim.
+- [catppuccin theme](https://github.com/catppuccin/nvim) Cool dark theme!
+- [telescope](https://github.com/nvim-telescope/telescope.nvim) is a highly extendable fuzzy finder over lists.
+- [tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter/wiki/Installation) provide some basic functionality such as highlighting and indentation.
+- [neo-tree](https://github.com/nvim-neo-tree/neo-tree.nvim) browse the file system and other tree like structures.
+- [lualine](https://github.com/nvim-lualine/lualine.nvim) Cool statusline!
 
 </details>
 
 <details>
 <summary><b>Font</b></summary>
   
-Will be organized what used what not. Currently installed is:
+> Will be organized what used what not. Because font alone is eating up 8G of my storage! But Its still under development. So... I will be experimenting some font that match my taste!
+
+Currently installed is:
 ```bash
 twemoji xorg-fonts noto-fonts-ttf noto-fonts-cjk nerd-fonts noto-fonts-emoji
 ```
 Using reference from [Void Linux Documentation](https://docs.voidlinux.org/config/graphical-session/fonts.html).
-
-</details>
 
 </details>
 
@@ -109,7 +112,7 @@ I'm personaly used cursor from [catppuccin](https://github.com/catppuccin/cursor
 
 </details>
 
-## 👾 How to install
+## 👾 Installation
 Comming soon
 
 ## 🤝 Credits
