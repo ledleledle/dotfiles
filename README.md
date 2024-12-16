@@ -24,6 +24,7 @@ Here are some details about my current setup:
 - 📚 **File Manager** TBD
 - 🎵 **Media Player** [mpv](https://mpv.io)
 - 📖 **IDE** [Neovim](https://neovim.io/) with plugins installed (see Neovim section).
+- 🌐 **Browser** [Firefox](https://www.mozilla.org) with a cool theme
 
 ## 🧑‍🔧 About the Dotfiles
 > [!NOTE]
@@ -40,13 +41,17 @@ This configuration is inspired by this cruel world, depression and anxious feeli
 ## 📚 Dependencies (Prerequisite)
 This guide will help you to install some essential dependencies in order to used this configuration and running the OS properly.
 
+> [!WARNING]  
+> 🤖 Still tested and running on Void Linux only.<br>
+> But I planned to supporting and providing info for any other Linux Distribution, until then if you're not using Void Linux, please research all the dependecies all by yourself 🙏
+
 Anyway... You know how to install dependencies in Void Linux?
 ```bash
 sudo xbps-install abc1 abc2 abc3 ...
 ```
 
 <details>
-<summary><b>Core dependencies</b></summary>
+<summary><b>Core dependencies (Void Linux)</b></summary>
 
 `base-devel` is like `build-essential`.
 ```
@@ -71,6 +76,9 @@ Then you can install the packages as you would any other:
 ```
 hyprland xdg-desktop-portal-hyprland hyprland-protocols hyprpaper
 ```
+
+#### PipeWire
+PipeWire is a modern server for handling audio (and video) streams.
 
 </details>
 
