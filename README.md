@@ -21,7 +21,7 @@ Here are some details about my current setup:
 - 🔔 **Desktop Notification** [Dunst](https://github.com/dunst-project/dunst)
 - 🐱 **Terminal Emulator** [Kitty](https://github.com/kovidgoyal/kitty)
 - 🖥️ **Shell** [Zsh](https://zsh.org) with [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) framework.
-- 📚 **File Manager** TBD
+- 📚 **File Manager** [Thunar](https://wiki.archlinux.org/title/Thunar)
 - 🎵 **Media Player** [mpv](https://mpv.io)
 - 📖 **IDE** [Neovim](https://neovim.io/) with plugins installed (see Neovim section).
 - 🌐 **Browser** [Firefox](https://www.mozilla.org) with a cool theme
@@ -53,14 +53,26 @@ sudo xbps-install abc1 abc2 abc3 ...
 <details>
 <summary><b>Core dependencies (Void Linux)</b></summary>
 
-`base-devel` is like `build-essential`.
+#### Core utilities
 ```
-git xorg base-devel brightnessctl
+git curl wget unzip
+```
+
+#### Core dependencies (in order to work properly)
+> **Notes**: If you're previously using `wpa_supplicant` or any other network manager, please disable service or it will be conflict between services. We'll use `NetworkManager` service to connect to internet and for widget we'll use `nm-applet`.
+```
+xorg base-devel brightnessctl dbus NetworkManager network-manager-applet dunst tlp
 ```
 For rootless `brightnessctl` you can use bellow command.
 ```bash
 sudo chmod +s $(which brightnessctl)
 ```
+Enable all services
+```
+sudo ln -s
+```
+**Context**: [XOrg](https://wiki.archlinux.org/title/Xorg), [D-Bus](https://docs.voidlinux.org/config/session-management.html#d-bus), [base-devel](https://bbs.archlinux.org/viewtopic.php?pid=1720288#p1720288), [TLP](https://docs.voidlinux.org/config/power-management.html), [Dunst](https://github.com/dunst-project/dunst)
+
 
 #### Hyprland
 Hyprland is not available from Void Linux’s official repositories [due to a conflict of packaging philosophy](https://github.com/void-linux/void-packages/issues/37544). However, a [third party repository](https://github.com/Makrennel/hyprland-void) is available with binary packages built in CI by GitHub Actions.
@@ -77,11 +89,35 @@ Then you can install the packages as you would any other:
 hyprland xdg-desktop-portal-hyprland hyprland-protocols hyprpaper
 ```
 
-#### PipeWire
-PipeWire is a modern server for handling audio (and video) streams.
+#### Audio, Screen sharing & Media Player
+**TL;DR** `pavucontrol` with `pipewire` framework and `mpv` for media player.<br>
+More detailed information can be read at this [Void Linux Documentation: PipeWire](https://docs.voidlinux.org/config/media/pipewire.html)
+```
+pavucontrol pipewire pipewire-devel alsa-pipewire wireplumber mpv
+```
 
-####
+```bash
+sudo mkdir -p 
+sudo ln -s /usr/share/alsa/alsa.conf.d/50-pipewire.conf /etc/alsa/conf.d
+sudo ln -s /usr/share/alsa/alsa.conf.d/99-pipewire-default.conf /etc/alsa/conf.d
+```
 
+</details>
+
+<details>
+<summary><b>Utilities</b></summary>
+
+#### Image viewer and screenshoot
+Screenshoting with `slurp` and `grim`. And image viewer using `swappy`.
+
+```
+grim slurp swappy
+```
+#### File Manager
+Thunar with capital T
+```
+Thunar
+```
 </details>
 
 <details>
