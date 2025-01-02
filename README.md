@@ -139,6 +139,7 @@ neovim fd ripgrep
 - [mason-lspconfig](https://github.com/williamboman/mason-lspconfig.nvim), [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig), [telescope-ui-select](https://github.com/nvim-telescope/telescope-ui-select.nvim), [none-ls](https://github.com/nvimtools/none-ls.nvim) You can read about [LSP Here!](https://neovim.io/doc/user/lsp.html) LSP diagnostics, code actions.
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp), [LuaSnip](https://github.com/L3MON4D3/LuaSnip), [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp), [friendly-snippets](https://github.com/rafamadriz/friendly-snippets) Autocompletion and Snippets.
 
+Thanks to this repository https://github.com/cpow/neovim-for-newbs for my references.
 </details>
 
 <details>
