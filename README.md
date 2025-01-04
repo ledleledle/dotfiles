@@ -123,6 +123,8 @@ Thunar
 <details>
 <summary><b>Neovim</b></summary>
 
+> I am new to neovim and lua language, if there is any suggestion, please make Issues.
+
 Required to install for neovim. `fd` and `ripgrep` will be used for `telescope` plugin.
 ```
 neovim fd ripgrep
@@ -130,7 +132,7 @@ neovim fd ripgrep
 ---
 #### ⚙️ Plugin used
 - [lazy.nvim](https://github.com/folke/lazy.nvim) is a plugin manager for Neovim.
-- [catppuccin theme](https://github.com/catppuccin/nvim) Cool dark theme!
+- [paletee.nvim](https://github.com/roobert/palette.nvim) Cool and customizable theme!
 - [alpha-nvim](https://github.com/goolord/alpha-nvim) Cool dashboard 👍
 - [telescope](https://github.com/nvim-telescope/telescope.nvim) is a highly extendable fuzzy finder over lists.
 - [tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter/wiki/Installation) provide some basic functionality such as highlighting and indentation.
