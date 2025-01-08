@@ -4,8 +4,8 @@
 [![Created Badge](https://badges.pufler.dev/created/ledleledle/dotfiles)](https://github.com/ledleledle/dotfiles)
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" alt="" align="right" width="400px" srcset=""/>
-  <img alt="" align="right" width="400px" src=""/>
+  <source media="(prefers-color-scheme: dark)" alt="" align="right" width="400px" srcset="development_preview.png"/>
+  <img alt="" align="right" width="400px" src="development_preview.png"/>
 </picture>
 
 :hand: **Hi there... Thank you for comming by!**
@@ -61,7 +61,7 @@ git curl wget unzip
 #### Core dependencies (in order to work properly)
 > **Notes**: If you're previously using `wpa_supplicant` or any other network manager, please disable service or it will be conflict between services. We'll use `NetworkManager` service to connect to internet and for widget we'll use `nm-applet`.
 ```
-xorg base-devel brightnessctl dbus NetworkManager network-manager-applet dunst tlp
+xorg base-devel brightnessctl dbus NetworkManager network-manager-applet dunst tlp wlogout
 ```
 For rootless `brightnessctl` you can use bellow command.
 ```bash
@@ -71,7 +71,7 @@ Enable all services
 ```
 sudo ln -s
 ```
-**Context**: [XOrg](https://wiki.archlinux.org/title/Xorg), [D-Bus](https://docs.voidlinux.org/config/session-management.html#d-bus), [base-devel](https://bbs.archlinux.org/viewtopic.php?pid=1720288#p1720288), [TLP](https://docs.voidlinux.org/config/power-management.html), [Dunst](https://github.com/dunst-project/dunst)
+**Context**: [XOrg](https://wiki.archlinux.org/title/Xorg), [D-Bus](https://docs.voidlinux.org/config/session-management.html#d-bus), [base-devel](https://bbs.archlinux.org/viewtopic.php?pid=1720288#p1720288), [TLP](https://docs.voidlinux.org/config/power-management.html), [Dunst](https://github.com/dunst-project/dunst), [wlogout](https://github.com/ArtsyMacaw/wlogout)
 
 
 #### Hyprland
