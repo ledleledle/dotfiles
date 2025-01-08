@@ -86,7 +86,7 @@ xbps-install -S
 ```
 Then you can install the packages as you would any other:
 ```
-hyprland xdg-desktop-portal-hyprland hyprland-protocols hyprpaper
+hyprland xdg-desktop-portal-hyprland hyprland-protocols hyprpaper hyprlock hypridle
 ```
 
 #### Audio, Screen sharing & Media Player
@@ -111,7 +111,7 @@ sudo ln -s /usr/share/alsa/alsa.conf.d/99-pipewire-default.conf /etc/alsa/conf.d
 Screenshoting with `slurp` and `grim`. And image viewer using `swappy`.
 
 ```
-grim slurp swappy
+grim slurp swappy jq
 ```
 #### File Manager
 Thunar with capital T
