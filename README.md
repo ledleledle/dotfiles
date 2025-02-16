@@ -18,7 +18,7 @@ Here are some details about my current setup:
 - 🪟 **Window Manager** [Hyprland](https://hyprland.org) tilling WM with rich features.
 - 🌻 **Panel** [Waybar](https://github.com/Alexays/Waybar)
 - 🚀 **Application Launcher** [Wofi](https://hg.sr.ht/~scoopta/wofi)
-- 🔔 **Desktop Notification** [Dunst](https://github.com/dunst-project/dunst)
+- 🔔 **Desktop Notification** [SwayNotificationCenter](https://github.com/ErikReider/SwayNotificationCenter)
 - 🐱 **Terminal Emulator** [Kitty](https://github.com/kovidgoyal/kitty)
 - 🖥️ **Shell** [Zsh](https://zsh.org) with [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) framework.
 - 📚 **File Manager** [Thunar](https://wiki.archlinux.org/title/Thunar)
@@ -61,7 +61,7 @@ git curl wget unzip
 #### Core dependencies (in order to work properly)
 > **Notes**: If you're previously using `wpa_supplicant` or any other network manager, please disable service or it will be conflict between services. We'll use `NetworkManager` service to connect to internet and for widget we'll use `nm-applet`.
 ```
-xorg base-devel brightnessctl dbus NetworkManager network-manager-applet dunst tlp wlogout
+xorg base-devel brightnessctl dbus NetworkManager network-manager-applet dunst tlp wlogout gvfs gvfs-mtp zsh
 ```
 For rootless `brightnessctl` you can use bellow command.
 ```bash
@@ -71,7 +71,7 @@ Enable all services
 ```
 sudo ln -s
 ```
-**Context**: [XOrg](https://wiki.archlinux.org/title/Xorg), [D-Bus](https://docs.voidlinux.org/config/session-management.html#d-bus), [base-devel](https://bbs.archlinux.org/viewtopic.php?pid=1720288#p1720288), [TLP](https://docs.voidlinux.org/config/power-management.html), [Dunst](https://github.com/dunst-project/dunst), [wlogout](https://github.com/ArtsyMacaw/wlogout)
+**Context**: [XOrg](https://wiki.archlinux.org/title/Xorg), [D-Bus](https://docs.voidlinux.org/config/session-management.html#d-bus), [base-devel](https://bbs.archlinux.org/viewtopic.php?pid=1720288#p1720288), [TLP](https://docs.voidlinux.org/config/power-management.html), [Dunst](https://github.com/dunst-project/dunst), [wlogout](https://github.com/ArtsyMacaw/wlogout), [GVFS](https://wiki.archlinux.org/title/Media_Transfer_Protocol), [Zsh](https://zsh.org)
 
 
 #### Hyprland
