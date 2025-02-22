@@ -20,11 +20,11 @@ Here are some details about my current setup:
 - 🚀 **Application Launcher** [Wofi](https://hg.sr.ht/~scoopta/wofi)
 - 🔔 **Desktop Notification** [SwayNotificationCenter](https://github.com/ErikReider/SwayNotificationCenter)
 - 🐱 **Terminal Emulator** [Kitty](https://github.com/kovidgoyal/kitty)
-- 🖥️ **Shell** [Zsh](https://zsh.org) with [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) framework.
+- 🖥️ **Shell** [Zsh](https://zsh.org) with tmux.
 - 📚 **File Manager** [Thunar](https://wiki.archlinux.org/title/Thunar)
 - 🎵 **Media Player** [mpv](https://mpv.io)
 - 📖 **IDE** [Neovim](https://neovim.io/) with plugins installed (see Neovim section).
-- 🌐 **Browser** [Firefox](https://www.mozilla.org) with a cool theme
+- 🌐 **Browser** [Firefox](https://www.mozilla.org) with a cool theme.
 
 ## 🧑‍🔧 About the Dotfiles
 > [!NOTE]
@@ -38,7 +38,7 @@ This configuration is inspired by this cruel world, depression and anxious feeli
 - :cry: Moody, can be dark or light.
 - :keyboard: Keyboard users might love it but mouse-friendly too.
 
-## 📚 Dependencies (Prerequisite)
+## 📚 Dependencies
 This guide will help you to install some essential dependencies in order to used this configuration and running the OS properly.
 
 > [!WARNING]  
@@ -49,19 +49,19 @@ Anyway... You know how to install dependencies in Void Linux?
 ```bash
 sudo xbps-install abc1 abc2 abc3 ...
 ```
-
-<details>
-<summary><b>Core dependencies (Void Linux)</b></summary>
-
-#### Core utilities
+### Pre-Requisite
+To install this dotfiles, you need some of the dependencies to pull the resources.
 ```
 git curl wget unzip
 ```
 
+<details>
+<summary><b>Core dependencies (Void Linux)</b></summary>
+
 #### Core dependencies (in order to work properly)
 > **Notes**: If you're previously using `wpa_supplicant` or any other network manager, please disable service or it will be conflict between services. We'll use `NetworkManager` service to connect to internet and for widget we'll use `nm-applet`.
 ```
-xorg base-devel brightnessctl dbus NetworkManager network-manager-applet dunst tlp wlogout gvfs gvfs-mtp zsh fzf
+xorg base-devel brightnessctl dbus NetworkManager network-manager-applet SwayNotificationCenter tlp wlogout gvfs gvfs-mtp zsh fzf Thunar
 ```
 For rootless `brightnessctl` you can use bellow command.
 ```bash
@@ -71,7 +71,7 @@ Enable all services
 ```
 sudo ln -s
 ```
-**Context**: [XOrg](https://wiki.archlinux.org/title/Xorg), [D-Bus](https://docs.voidlinux.org/config/session-management.html#d-bus), [base-devel](https://bbs.archlinux.org/viewtopic.php?pid=1720288#p1720288), [TLP](https://docs.voidlinux.org/config/power-management.html), [Dunst](https://github.com/dunst-project/dunst), [wlogout](https://github.com/ArtsyMacaw/wlogout), [GVFS](https://wiki.archlinux.org/title/Media_Transfer_Protocol), [Zsh](https://zsh.org), [fzf](https://github.com/junegunn/fzf)
+**Context**: [XOrg](https://wiki.archlinux.org/title/Xorg), [D-Bus](https://docs.voidlinux.org/config/session-management.html#d-bus), [base-devel](https://bbs.archlinux.org/viewtopic.php?pid=1720288#p1720288), [TLP](https://docs.voidlinux.org/config/power-management.html), [SwayNotificationCenter](https://github.com/ErikReider/SwayNotificationCenter), [wlogout](https://github.com/ArtsyMacaw/wlogout), [GVFS](https://wiki.archlinux.org/title/Media_Transfer_Protocol), [Zsh](https://zsh.org), [fzf](https://github.com/junegunn/fzf), [Thunar](https://wiki.archlinux.org/title/Thunar)
 
 
 #### Hyprland
@@ -102,22 +102,21 @@ sudo ln -s /usr/share/alsa/alsa.conf.d/50-pipewire.conf /etc/alsa/conf.d
 sudo ln -s /usr/share/alsa/alsa.conf.d/99-pipewire-default.conf /etc/alsa/conf.d
 ```
 
-</details>
-
-<details>
-<summary><b>Utilities</b></summary>
-
 #### Image viewer and screenshoot
 Screenshoting with `slurp` and `grim`. And image viewer using `swappy`.
-
 ```
 grim slurp swappy jq
 ```
-#### File Manager
-Thunar with capital T
+
+#### Bluetooth (Optional)
+If your device have bluetooth installed, then you need these dependencies.
 ```
-Thunar
+bluez libspa-bluetooth blueman
 ```
+`blueman` is optional, if you want to use app to manage bluetooth then install it!
+
+Source: https://docs.voidlinux.org/config/bluetooth.html
+
 </details>
 
 <details>
