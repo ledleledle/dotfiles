@@ -23,7 +23,7 @@ Here are some details about my current setup:
 - 🖥️ **Shell** [Zsh](https://zsh.org) with tmux.
 - 📚 **File Manager** [Thunar](https://wiki.archlinux.org/title/Thunar)
 - 🎵 **Media Player** [mpv](https://mpv.io)
-- 📖 **IDE** [Neovim](https://neovim.io/) with plugins installed (see Neovim section).
+- 📖 **IDE** [Neovim](https://neovim.io/) using [NVChad](https://github.com/NvChad/NvChad).
 - 🌐 **Browser** [Firefox](https://www.mozilla.org) with a cool theme.
 
 ## 🧑‍🔧 About the Dotfiles
@@ -122,25 +122,23 @@ Source: https://docs.voidlinux.org/config/bluetooth.html
 <details>
 <summary><b>Neovim</b></summary>
 
-> I am new to neovim and lua language, if there is any suggestion, please make Issues.
-
 Required to install for neovim. `fd` and `ripgrep` will be used for `telescope` plugin.
 ```
 neovim fd ripgrep
 ```
 ---
-#### ⚙️ Plugin used
-- [lazy.nvim](https://github.com/folke/lazy.nvim) is a plugin manager for Neovim.
-- [paletee.nvim](https://github.com/roobert/palette.nvim) Cool and customizable theme!
-- [alpha-nvim](https://github.com/goolord/alpha-nvim) Cool dashboard 👍
-- [telescope](https://github.com/nvim-telescope/telescope.nvim) is a highly extendable fuzzy finder over lists.
-- [tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter/wiki/Installation) provide some basic functionality such as highlighting and indentation.
-- [neo-tree](https://github.com/nvim-neo-tree/neo-tree.nvim) browse the file system and other tree like structures.
-- [lualine](https://github.com/nvim-lualine/lualine.nvim) Cool statusline in the bottom!
-- [mason-lspconfig](https://github.com/williamboman/mason-lspconfig.nvim), [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig), [telescope-ui-select](https://github.com/nvim-telescope/telescope-ui-select.nvim), [none-ls](https://github.com/nvimtools/none-ls.nvim) You can read about [LSP Here!](https://neovim.io/doc/user/lsp.html) LSP diagnostics, code actions.
-- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp), [LuaSnip](https://github.com/L3MON4D3/LuaSnip), [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp), [friendly-snippets](https://github.com/rafamadriz/friendly-snippets) Autocompletion and Snippets.
 
-Thanks to this repository https://github.com/cpow/neovim-for-newbs for my references.
+I'm using [NVChad](https://github.com/NvChad/NvChad). For more customizations please refer to [this documentation](https://nvchad.com/docs/config/walkthrough).
+
+#### Syntax Highlighting & Code Snippet
+```
+# Syntax Highlighting
+:TSInstall <your_programming_language>
+
+# Code Snippet
+:MasonInstall <your_programming_language>
+```
+
 </details>
 
 <details>
