@@ -17,10 +17,10 @@ Here are some details about my current setup:
 - 💻 **Device** Lenovo Thinkpad X280
 - 🪟 **Window Manager** [Hyprland](https://hyprland.org) tilling WM with rich features.
 - 🌻 **Panel** [Waybar](https://github.com/Alexays/Waybar)
-- 🚀 **Application Launcher** [Wofi](https://hg.sr.ht/~scoopta/wofi)
-- 🔔 **Desktop Notification** [SwayNotificationCenter](https://github.com/ErikReider/SwayNotificationCenter)
+- 🚀 **Application Launcher** [Fuzzel](https://codeberg.org/dnkl/fuzzel)
+- 🔔 **Desktop Notification** [eww](https://github.com/elkowar/eww)
 - 🐱 **Terminal Emulator** [Kitty](https://github.com/kovidgoyal/kitty)
-- 🖥️ **Shell** [Zsh](https://zsh.org) with tmux.
+- 🖥️ **Shell** [Zsh](https://zsh.org) with [tmux](https://github.com/tmux/tmux).
 - 📚 **File Manager** [Thunar](https://wiki.archlinux.org/title/Thunar)
 - 🎵 **Media Player** [mpv](https://mpv.io)
 - 📖 **IDE** [Neovim](https://neovim.io/) using [NVChad](https://github.com/NvChad/NvChad).
@@ -68,6 +68,12 @@ Enable all services
 ```
 sudo ln -s
 ```
+
+Add your user to `_seatd` group. For the context, read this [seatd readme](https://github.com/kennylevinsen/seatd?tab=readme-ov-file#what-is-seat-management)
+```
+sudo usermod -aG _seatd $(whoami)
+```
+
 **Context**: [XOrg](https://wiki.archlinux.org/title/Xorg), [D-Bus](https://docs.voidlinux.org/config/session-management.html#d-bus), [elogind & polkit](https://docs.voidlinux.org/config/power-management.html#elogind), [seatd](https://docs.voidlinux.org/config/session-management.html#seatd), [base-devel](https://bbs.archlinux.org/viewtopic.php?pid=1720288#p1720288), [TLP](https://docs.voidlinux.org/config/power-management.html), [SwayNotificationCenter](https://github.com/ErikReider/SwayNotificationCenter), [wlogout](https://github.com/ArtsyMacaw/wlogout), [GVFS](https://wiki.archlinux.org/title/Media_Transfer_Protocol), [Zsh](https://zsh.org), [fzf](https://github.com/junegunn/fzf), [Thunar](https://wiki.archlinux.org/title/Thunar)
 
 
