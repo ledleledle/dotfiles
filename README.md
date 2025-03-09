@@ -114,6 +114,31 @@ bluez libspa-bluetooth blueman
 
 Source: https://docs.voidlinux.org/config/bluetooth.html
 
+#### Display Manager (Optional)
+If you want to use display manager same as mine, I used `sddm` with theme based on [this](https://www.opendesktop.org/p/1272122). But there is one issue if we want to used `ssdm`, `Hyprland` session needed to be run on `dbus session`, in order to make that happen ussualy I run on terminal using command `dbus-run-session Hyprland`. But... If you're using `sddm` by default it will uses default `Hyprland`, so applications that needed `dbus` in order to be run is failing. The solution is we can edit `sudo nvim /usr/share/wayland-sessions/hyprland.desktop` like this:
+```
+[Desktop Entry]
+Name=Hyprland
+Comment=An intelligent dynamic tiling Wayland compositor
+Exec=dbus-run-session Hyprland
+Type=Application
+```
+And then, Install the requirements:
+```bash
+sddm qt5 qt5-quickcontrols2 qt5-svg qt5-graphicaleffects
+```
+Then download the theme and extract it to `/usr/share/sddm/themes`.
+```bash
+sudo tar -xf ~/Downloads/sugar-dark.tar -C /usr/share/sddm/themes
+```
+Edit `sddm` config at `/etc/sddm.conf.d/sddm.conf`, and find `[Theme]` section.
+```
+...
+[Theme]
+# Current theme name
+Current=sugar-dark
+...
+```
 </details>
 
 <details>
