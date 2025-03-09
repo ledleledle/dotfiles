@@ -5,7 +5,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" alt="" align="right" width="400px" srcset="development_preview.png"/>
-  <img alt="" align="right" width="400px" src="development_preview.png"/>
+  <img alt="" align="right" width="400px" src="development_preview.png" href="https://raw.githubusercontent.com/ledleledle/dotfiles/main/development_preview.png"/>
 </picture>
 
 :hand: **Hi there... Thank you for comming by!**
