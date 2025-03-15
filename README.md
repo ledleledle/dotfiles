@@ -196,7 +196,8 @@ Comming soon
 They are my inspiration. *Pahlawan tanpa tanda jasa*.
 - [r/unixp*rn](https://www.reddit.com/r/unixporn)
 - [r/hyprland](https://www.reddit.com/r/hyprland)
-- The GOAT itself [@owl4ce](https://github.com/owl4ce/dotfiles)
+- [Linuxer Desktop Art](https://web.facebook.com/groups/303997109715275) (Indonesian Community)
+- And The GOAT itself [@owl4ce](https://github.com/owl4ce/dotfiles)
 <!--
 ## And thanks to
 [![Contributors Display](https://badges.pufler.dev/contributors/ledleledle/dotfiles?size=50&padding=5&perRow=10&bots=true)](https://github.com/ledleledle/dotfiles)
