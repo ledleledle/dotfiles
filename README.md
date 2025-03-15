@@ -194,7 +194,8 @@ Comming soon
 
 ## 🤝 Credits
 They are my inspiration. *Pahlawan tanpa tanda jasa*.
-- https://github.com/quantumfate/wofi
+- [r/unixp*rn](https://www.reddit.com/r/unixporn)
+- [r/hyprland](https://www.reddit.com/r/hyprland)
 - The GOAT itself [@owl4ce](https://github.com/owl4ce/dotfiles)
 <!--
 ## And thanks to
